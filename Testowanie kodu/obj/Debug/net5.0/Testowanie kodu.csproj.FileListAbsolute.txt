@@ -1,0 +1,44 @@
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.exe
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.deps.json
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.runtimeconfig.json
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.runtimeconfig.dev.json
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\ref\Testowanie kodu.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Testowanie kodu.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\NLog.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Npgsql.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Abstraction.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Base.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.DataBase.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.EncryptorDecryptor.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Entities.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.DataBase.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Abstraction.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Base.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.EncryptorDecryptor.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\bin\Debug\net5.0\PracaInzynierskaAPI.Entities.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.csproj.AssemblyReference.cache
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.GeneratedMSBuildEditorConfig.editorconfig
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.AssemblyInfoInputs.cache
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.AssemblyInfo.cs
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.csproj.CoreCompileInputs.cache
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.csproj.CopyComplete
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\ref\Testowanie kodu.dll
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.pdb
+D:\inz\PracaInzynierskaAPI\Testowanie kodu\obj\Debug\net5.0\Testowanie kodu.genruntimeconfig.cache

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog" Version="4.7.12" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.7.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PracaInzynierskaAPI.EncryptorDecryptor\PracaInzynierskaAPI.EncryptorDecryptor.csproj" />
+    <ProjectReference Include="..\PracaInzynierskaAPI.Entities\PracaInzynierskaAPI.Entities.csproj" />
+    <ProjectReference Include="..\PracaInzynierskaAPI.Models\PracaInzynierskaAPI.Models.csproj" />
+  </ItemGroup>
+
+</Project>

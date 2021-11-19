@@ -1,0 +1,602 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj": {}
+  },
+  "projects": {
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj",
+        "projectName": "PracaInzynierska.Application",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\PracaInzynierskaAPI.DataBase.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\PracaInzynierskaAPI.DataBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.12, )"
+            },
+            "NLog.Extended": {
+              "target": "Package",
+              "version": "[4.7.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
+        "projectName": "PracaInzynierskaAPI.API",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.12, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.12, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\PracaInzynierskaAPI.Core.Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\PracaInzynierskaAPI.Core.Abstraction.csproj",
+        "projectName": "PracaInzynierskaAPI.Core.Abstraction",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\PracaInzynierskaAPI.Core.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj",
+        "projectName": "PracaInzynierskaAPI.Core.Base",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\PracaInzynierskaAPI.DataBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\PracaInzynierskaAPI.DataBase.csproj",
+        "projectName": "PracaInzynierskaAPI.DataBase",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\PracaInzynierskaAPI.DataBase.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.DataBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\PracaInzynierskaAPI.EncryptorDecryptor.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\PracaInzynierskaAPI.EncryptorDecryptor.csproj"
+              },
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\PracaInzynierskaAPI.Entities.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\PracaInzynierskaAPI.Entities.csproj"
+              },
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.12, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\PracaInzynierskaAPI.EncryptorDecryptor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\PracaInzynierskaAPI.EncryptorDecryptor.csproj",
+        "projectName": "PracaInzynierskaAPI.EncryptorDecryptor",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\PracaInzynierskaAPI.EncryptorDecryptor.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.EncryptorDecryptor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\PracaInzynierskaAPI.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\PracaInzynierskaAPI.Entities.csproj",
+        "projectName": "PracaInzynierskaAPI.Entities",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\PracaInzynierskaAPI.Entities.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\PracaInzynierskaAPI.Core.Abstraction.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Abstraction\\PracaInzynierskaAPI.Core.Abstraction.csproj"
+              },
+              "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj": {
+                "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Core.Base\\PracaInzynierskaAPI.Core.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj",
+        "projectName": "PracaInzynierskaAPI.Models",
+        "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
+        "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.robosoft.net.pl/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

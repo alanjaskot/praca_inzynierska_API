@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PracaInzynierskaAPI.Core.Abstraction\PracaInzynierskaAPI.Core.Abstraction.csproj" />
+    <ProjectReference Include="..\PracaInzynierskaAPI.Core.Base\PracaInzynierskaAPI.Core.Base.csproj" />
+  </ItemGroup>
+
+</Project>
