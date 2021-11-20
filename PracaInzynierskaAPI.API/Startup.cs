@@ -106,18 +106,13 @@ namespace PracaInzynierskaAPI.API
                     ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
             });
 
-/*            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PracaInzynierskaAPI.API", Version = "v1" });
-            });*/
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
                     Title = "Praca Inzynierska API",
-                    Description = "Api do zarz¹dzania u¿ytkownikami",
+                    Description = "Api do pracy in¿ynierskiej",
                 });
 
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());

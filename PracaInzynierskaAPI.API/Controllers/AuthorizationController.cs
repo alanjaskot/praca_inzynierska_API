@@ -44,12 +44,17 @@ namespace PracaInzynierskaAPI.API.Controllers
             {
                 try
                 {
+                    bool isEmailExists = false;
+                    bool isUserNameExist = false;
                     var checkingUserName = _service.GetUserByUserName(login.Login);
-                    if (!checkingUserName.Success)
-                        return await Task.FromResult(BadRequest("błędny użytkownik lub hasło"));
+                    if (checkingUserName.Success)
+                        isUserNameExist = true;
 
                     var checkingEmail = _service.GetUserByEmail(login.Login);
-                    if (!checkingEmail.Success)
+                    if (checkingEmail.Success)
+                        isEmailExists = true;
+
+                    if(isUserNameExist == false && isEmailExists == false )
                         return await Task.FromResult(BadRequest("błędny użytkownik lub hasło"));
 
                     var loginResponse = _service.Login(login.Login, login.Password);

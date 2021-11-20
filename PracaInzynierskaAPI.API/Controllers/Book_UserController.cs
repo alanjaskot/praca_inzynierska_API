@@ -50,7 +50,7 @@ namespace PracaInzynierskaAPI.API.Controllers
 
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpGet("CreateBook_User")]
+        [HttpPost("CreateBook_User")]
         public async Task<IActionResult> CreateBook_User(Book_UserDTO book_userDTO)
         {
             try
@@ -70,7 +70,7 @@ namespace PracaInzynierskaAPI.API.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpGet("DeleteBook_User")]
+        [HttpDelete("DeleteBook_User")]
         public async Task<IActionResult> DeleteBook_User(Book_UserDTO book_userDTO)
         {
             try

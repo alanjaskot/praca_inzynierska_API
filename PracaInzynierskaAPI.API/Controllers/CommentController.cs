@@ -133,7 +133,7 @@ namespace PracaInzynierskaAPI.API.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpPost("UpdateComment")]
+        [HttpPut("UpdateComment")]
         public async Task<IActionResult> UpdateComment(CommentDTO comment)
         {
             if (comment == null)
@@ -155,7 +155,7 @@ namespace PracaInzynierskaAPI.API.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpPost("SoftDeleteComment")]
+        [HttpDelete("SoftDeleteComment")]
         public async Task<IActionResult> SoftDeleteComment(CommentDTO comment)
         {
             if (comment == null)

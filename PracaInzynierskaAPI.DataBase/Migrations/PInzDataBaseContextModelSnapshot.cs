@@ -312,7 +312,7 @@ namespace PracaInzynierskaAPI.DataBase.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("character varying(500)");
 
-                    b.Property<Guid>("CommentId")
+                    b.Property<Guid?>("CommentId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")
