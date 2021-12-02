@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.UserPermission;
 using PracaInzynierska.Application.Services.UserPermission;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             _logger = LogManager.GetCurrentClassLogger();
         }
 
+        [Authorize(Policy = Policies.UserPermission.Write)]
         [HttpPost("AddPermission")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -100,6 +102,7 @@ namespace PracaInzynierskaAPI.API.Controllers
                 return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.UserPermission.Delete)]
         [HttpDelete("DeleteAllPermissionsByUserGuid")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -125,6 +128,7 @@ namespace PracaInzynierskaAPI.API.Controllers
                 return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.UserPermission.Delete)]
         [HttpDelete("DeletePermitionForUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

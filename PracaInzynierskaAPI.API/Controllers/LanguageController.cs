@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Language;
 using PracaInzynierska.Application.Services.Language;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,6 +89,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Language.Write)]
         [HttpPost("CreateLanguage")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -110,6 +112,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Language.Update)]
         [HttpPut("UpdateLanguage")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -132,6 +135,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Language.SoftDelete)]
         [HttpDelete("SoftDeleteLanguage")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

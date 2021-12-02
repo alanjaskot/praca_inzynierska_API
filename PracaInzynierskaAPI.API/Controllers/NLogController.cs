@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.Services.NLog;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             _logger = LogManager.GetCurrentClassLogger();
         }
 
+        [Authorize(Policy = Policies.NLogs.Read)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet("GetAllNLogs")]

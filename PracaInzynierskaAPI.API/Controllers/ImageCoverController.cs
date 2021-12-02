@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.ImageCover;
 using PracaInzynierska.Application.Services.ImageCover;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,6 +69,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.ImageCover.Update)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("UpdateImageCover")]
@@ -90,6 +92,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.ImageCover.Delete)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpDelete("DeleteImageCover")]

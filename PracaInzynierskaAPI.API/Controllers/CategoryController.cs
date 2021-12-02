@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Category;
 using PracaInzynierska.Application.Services.Category;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -95,6 +96,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.Category.Write)]
         [HttpPost("CreateCategory")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -116,6 +118,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.Category.Update)]
         [HttpPut("UpdateCategory")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -137,6 +140,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.Category.SoftDelete)]
         [HttpDelete("SoftDeleteCategory")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -158,6 +162,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             return await Task.FromResult(BadRequest());
         }
 
+        [Authorize(Policy = Policies.Category.Delete)]
         [HttpDelete("DeleteCategory")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

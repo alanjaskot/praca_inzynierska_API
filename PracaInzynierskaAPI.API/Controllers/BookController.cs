@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Book;
 using PracaInzynierska.Application.Services.Book;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book.Approve)]
         [HttpGet("GetBooksToAprrove")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -255,6 +257,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book.Approve)]
         [HttpPut("ApproveBooks")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -279,6 +282,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book.Update)]
         [HttpPut("UpdateBook")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -303,6 +307,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book.SoftDelete)]
         [HttpDelete("SoftDeleteBooks")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -327,6 +332,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book.Delete)]
         [HttpDelete("DeleteBook")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

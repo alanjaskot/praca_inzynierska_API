@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Book_Author;
 using PracaInzynierska.Application.Services.Book_Author;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -93,6 +94,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Book_Author.Delete)]
         [HttpDelete("GetAllAuthorsByBook")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

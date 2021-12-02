@@ -1,4 +1,3 @@
-using PracaInzynierskaAPI.API.Policies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
@@ -41,11 +40,16 @@ using Microsoft.OpenApi.Models;
 using System.Linq;
 using System.Collections.Generic;
 using PracaInzynierskaAPI.API.JWT;
+using System;
+using Autofac;
+using System.Reflection;
 
 namespace PracaInzynierskaAPI.API
 {
     public class Startup
     {
+        public static IContainer Container { get; set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -152,7 +156,9 @@ namespace PracaInzynierskaAPI.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app,
+            IWebHostEnvironment env,
+             PInzDataBaseContext dataBaseContext)
         {
             if (env.IsDevelopment())
             {
@@ -176,6 +182,42 @@ namespace PracaInzynierskaAPI.API
             {
                 endpoints.MapControllers();
             });
+
+            Console.WriteLine("Migration start");
+            dataBaseContext.Database.Migrate();
+            Console.WriteLine("Migration end");
+
+            var builder = new ContainerBuilder();
+
+            var assembliy = Assembly.GetExecutingAssembly();
+
+            builder.RegisterAssemblyTypes(assembliy)
+                  .AsImplementedInterfaces();
+
+            builder
+                .RegisterType<PInzDataBaseContext>()
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
+
+            builder
+                .RegisterType<UnitOfWork>()
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
+
+            builder
+                .RegisterType<UserService>()
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
+
+            builder
+                .RegisterType<UserPermissionService>()
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
+
+
+
+            Container = builder.Build();
+
         }
     }
 }

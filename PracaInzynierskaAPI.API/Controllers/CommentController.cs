@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Comment;
 using PracaInzynierska.Application.Services.Comment;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -131,6 +132,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Comment.Update)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("UpdateComment")]
@@ -153,6 +155,7 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
+        [Authorize(Policy = Policies.Comment.SoftDelete)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpDelete("SoftDeleteComment")]

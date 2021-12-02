@@ -69,3 +69,5 @@ D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\bin\Debug\net5.0\Newtonsoft.J
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\bin\Debug\net5.0\PracaInzynierskaAPI.Models.dll
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\bin\Debug\net5.0\PracaInzynierskaAPI.Models.pdb
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\obj\Debug\net5.0\PracaInzynierskaAPI.API.csproj.CopyComplete
+D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\bin\Debug\net5.0\Autofac.dll
+D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.API\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll

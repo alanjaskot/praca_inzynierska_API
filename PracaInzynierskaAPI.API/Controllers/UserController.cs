@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NLog;
 using PracaInzynierska.Application.DTO.User;
 using PracaInzynierska.Application.Services.User;
-using PracaInzynierskaAPI.API.Policies;
+using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,10 +70,35 @@ namespace PracaInzynierskaAPI.API.Controllers
                 }
                 catch (Exception err)
                 {
-                    _logger.Error(err, "UserController.GetAllUsers");
+                    _logger.Error(err, "UserController.UpdateUser");
                     throw;
                 }
 
+            }
+            return await Task.FromResult(BadRequest());
+        }
+
+        [Authorize(Policy = Policies.User.Delete)]
+        [HttpDelete("DeleteUser")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> DeleteUser(Guid userId)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var result = _service.DeleteUser(userId);
+                    if (result.Success)
+                        return await Task.FromResult(Ok(result));
+                    else
+                        return await Task.FromResult(BadRequest(result));
+                }
+                catch (Exception err)
+                {
+                    _logger.Error(err, "UserController.DeleteUser");
+                    throw;
+                }
             }
             return await Task.FromResult(BadRequest());
         }

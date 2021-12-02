@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zTMhzVf6t/IMjayMJk12nRRa3YXD8njmzGm2znwW0ZTcOZuGfQiAcoVfQDDkeqaxw0/fWOPXuSW0cYnC9bBWCQ==",
+  "dgSpecHash": "o1xr6ieDk47gYYzoD+1xuwzHY43MdrNtajMiNcTfa9CkuQcjnLYbMQ41ONhBT+HmGLqkZuajpUu/ldg4XZIoPw==",
   "success": true,
   "projectFilePath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alanj\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\alanj\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\alanj\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\alanj\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alanj\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
