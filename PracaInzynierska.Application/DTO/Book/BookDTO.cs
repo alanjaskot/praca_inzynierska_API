@@ -17,14 +17,12 @@ namespace PracaInzynierska.Application.DTO.Book
         public long Dislikes { get; set; }
         public decimal LikesPercentage { get; }
         public bool Approved { get; set; }
-        public bool ForDelete { get; set; }
+
 
 #nullable enable
         public string? Subtitle { get; set; }
         public string? Series { get; set; }
         public int? Pages { get; set; }
-        public string? Cover { get; set; }
-        public string? CoverName { get; set; }
 #nullable disable
 
         //foreign key

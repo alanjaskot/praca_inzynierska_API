@@ -53,6 +53,53 @@ namespace PracaInzynierskaAPI.API.Controllers
             return await Task.FromResult(BadRequest());    
         }
 
+        [HttpGet("GetMe")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetMe()
+        {
+            if (string.IsNullOrWhiteSpace(User.Identity.Name))
+                return await Task.FromResult(Ok(null));
+            try
+            {
+                var me = _service.GetUserById(Guid.Parse(User.Identity.Name));
+                if (me != null)
+                    return await Task.FromResult(Ok(me));
+                else
+                    return await Task.FromResult(Ok(null));
+            }
+            catch(Exception err)
+            {
+                _logger.Error(err, "UserController.GetMe");
+                throw;
+            }
+        }
+
+        [HttpGet("GetMe")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetMeWithPassword()
+        {
+            if (string.IsNullOrWhiteSpace(User.Identity.Name))
+                return await Task.FromResult(Ok(null));
+            try
+            {
+                var me = _service.GetUserByIdForModAndAdmin(Guid.Parse(User.Identity.Name));
+                if (me != null)
+                    return await Task.FromResult(Ok(me));
+                else
+                    return await Task.FromResult(Ok(null));
+            }
+            catch (Exception err)
+            {
+                _logger.Error(err, "UserController.GetMe");
+                throw;
+            }
+        }
+
+
         [HttpPut("UpdateUser")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

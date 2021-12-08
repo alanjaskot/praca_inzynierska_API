@@ -73,7 +73,7 @@ namespace PracaInzynierska.Application.Services.Book_Author
             }
         }
 
-        public ResponseModel<List<Guid>> AddBook_Author(List<Book_AuthorDTO> book_author)
+        public ResponseModel<List<Guid>> AddBook_Authors(List<Book_AuthorDTO> book_author)
         {
             try
             {
@@ -111,12 +111,12 @@ namespace PracaInzynierska.Application.Services.Book_Author
             }
         }
 
-        public ResponseModel<Guid> DeleteBook_Author(Guid id)
+        public ResponseModel<bool> DeleteBook_Author(Guid bookId)
         {
             try
             {
                 _unitOfWork.BeginTransaction();
-                var repoResponse = _unitOfWork.GetBook_AuthorRepository.Delete(id);
+                var repoResponse = _unitOfWork.GetBook_AuthorRepository.Delete(bookId);
                 if (repoResponse.Success)
                 {
                     var save = _unitOfWork.Save();
@@ -128,7 +128,7 @@ namespace PracaInzynierska.Application.Services.Book_Author
                     else
                     {
                         _unitOfWork.RollBackTransaction();
-                        return new ResponseModel<Guid>
+                        return new ResponseModel<bool>
                         {
                             Success = false,
                             Message = "Usuwanie nie powiodło się"

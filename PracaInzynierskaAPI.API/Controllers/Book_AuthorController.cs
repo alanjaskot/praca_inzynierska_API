@@ -72,28 +72,6 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
-        [HttpPost("GetAllAuthorsByBook")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> CreateBook_Author(List<Book_AuthorDTO> book_authors)
-        {
-            if (book_authors == null)
-                return await Task.FromResult(BadRequest());
-            try
-            {
-                var serviceResponse = _service.AddBook_Author(book_authors);
-                if (serviceResponse.Success)
-                    return await Task.FromResult(Ok(serviceResponse));
-                else
-                    return await Task.FromResult(BadRequest(serviceResponse));
-            }
-            catch (Exception err)
-            {
-                _logger.Error(err, "Book_AuthorsController.CreateBook_Author");
-                throw;
-            }
-        }
-
         [Authorize(Policy = Policies.Book_Author.Delete)]
         [HttpDelete("GetAllAuthorsByBook")]
         [ProducesResponseType(StatusCodes.Status200OK)]

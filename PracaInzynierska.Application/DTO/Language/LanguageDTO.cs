@@ -12,7 +12,6 @@ namespace PracaInzynierska.Application.DTO.Language
         public string Language { get; set; }
 
         //foreign key
-        public Guid BookId { get; set; }
         public Guid AddedBy { get; set; }
     }
 }

@@ -57,6 +57,7 @@ namespace PracaInzynierska.Application.Mapper
 
             config.CreateMap<UserDbModel, UserDTO>();
             config.CreateMap<UserDTO, UserDbModel>();
+            config.CreateMap<UserDbModel, UserInfoDTO>();
 
             config.CreateMap<UserPermissionDbModel, UserPermissionDTO>();
             config.CreateMap<UserPermissionDTO, UserPermissionDbModel>();

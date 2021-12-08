@@ -13,6 +13,6 @@ namespace PracaInzynierskaAPI.DataBase.Repository.Book_Author
         public ResponseModel<List<Guid>> GetAllBooksByAuthor(Guid id);
         public ResponseModel<List<Guid>> GetAllAuthorsByBook(Guid id);
         public ResponseModel<List<Guid>> Add(List<Book_AuthorDbModel> book_author);
-        public ResponseModel<Guid> Delete(Guid id);
+        public ResponseModel<bool> Delete(Guid bookId);
     }
 }

@@ -146,10 +146,10 @@ namespace PracaInzynierskaAPI.DataBase.Repository.Book_Author
             };
         }
 
-        public ResponseModel<Guid> Delete(Guid id)
+        public ResponseModel<bool> Delete(Guid bookId)
         {
-            if (id == Guid.Empty)
-                return new ResponseModel<Guid>
+            if (bookId == Guid.Empty)
+                return new ResponseModel<bool>
                 {
                     Success = false,
                     Message = "Podany identyfikator jest pusty"
@@ -157,24 +157,22 @@ namespace PracaInzynierskaAPI.DataBase.Repository.Book_Author
             try
             {
                 var temp = _context.Book_Authors
-                    .Where(ba => ba.Id == id)
-                    .FirstOrDefault();
+                    .Where(ba => ba.BookId == bookId)
+                    .ToList();
                 if (temp == null)
-                    return new ResponseModel<Guid>
+                    return new ResponseModel<bool>
                     {
                         Success = false,
                         Message = "Podana encja pośrednia nie istnieje"
                     };
                 if (temp != null)
                 {
-                    var delete = _context.Book_Authors.Remove(temp);
-                    if (delete.State == EntityState.Deleted)
-                        return new ResponseModel<Guid>
-                        {
+                    _context.Book_Authors.RemoveRange(temp);
+                    return new ResponseModel<bool>
+                    {
                             Success = true,
                             Message = null,
-                            Object = id
-                        };
+                    };
                 }
             }
             catch (Exception err)
@@ -182,7 +180,7 @@ namespace PracaInzynierskaAPI.DataBase.Repository.Book_Author
                 _logger.Error(err, "Book_Author.Delete");
                 throw;
             }
-            return new ResponseModel<Guid>
+            return new ResponseModel<bool>
             {
                 Success = false,
                 Message = "Błąd podczas usuwania"

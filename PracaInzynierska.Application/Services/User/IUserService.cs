@@ -10,10 +10,11 @@ namespace PracaInzynierska.Application.Services.User
 {
     public interface IUserService
     {
-        public ResponseModel<IEnumerable<UserDTO>> GetAllUsers();
-        public ResponseModel<UserDTO> GetUserById(Guid id);
-        public ResponseModel<UserDTO> GetUserByEmail(string email);
-        public ResponseModel<UserDTO> GetUserByUserName(string login);
+        public ResponseModel<IEnumerable<UserInfoDTO>> GetAllUsers();
+        public ResponseModel<UserInfoDTO> GetUserById(Guid id);
+        public ResponseModel<UserDTO> GetUserByIdForModAndAdmin(Guid id);
+        public ResponseModel<UserInfoDTO> GetUserByEmail(string email);
+        public ResponseModel<UserInfoDTO> GetUserByUserName(string login);
         public ResponseModel<UserDTO> Login(string emailOrUserName, string password);
         public ResponseModel<Guid> UpdateUser(UserDTO userModel);
         public ResponseModel<Guid> AddUser(UserDTO userModel);

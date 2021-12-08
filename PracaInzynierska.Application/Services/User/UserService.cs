@@ -26,20 +26,20 @@ namespace PracaInzynierska.Application.Services.User
             _logger = LogManager.GetCurrentClassLogger();
         }
 
-        public ResponseModel<IEnumerable<UserDTO>> GetAllUsers()
+        public ResponseModel<IEnumerable<UserInfoDTO>> GetAllUsers()
         {
             try
             {
                 var repoResponse = _unitOfWork.GetUserRepository.GetAll();
                 if (repoResponse.Success)
-                    return new ResponseModel<IEnumerable<UserDTO>>
+                    return new ResponseModel<IEnumerable<UserInfoDTO>>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message,
-                        Object = _mapper.Map<IEnumerable<UserDTO>>(repoResponse.Object)
+                        Object = _mapper.Map<IEnumerable<UserInfoDTO>>(repoResponse.Object)
                     };
                 else
-                    return new ResponseModel<IEnumerable<UserDTO>>
+                    return new ResponseModel<IEnumerable<UserInfoDTO>>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message
@@ -52,7 +52,33 @@ namespace PracaInzynierska.Application.Services.User
             }
         }
 
-        public ResponseModel<UserDTO> GetUserById(Guid id)
+        public ResponseModel<UserInfoDTO> GetUserById(Guid id)
+        {
+            try
+            {
+                var repoResponse = _unitOfWork.GetUserRepository.GetById(id);
+                if (repoResponse.Success)
+                    return new ResponseModel<UserInfoDTO>
+                    {
+                        Success = repoResponse.Success,
+                        Message = repoResponse.Message,
+                        Object = _mapper.Map<UserInfoDTO>(repoResponse.Object)
+                    };
+                else
+                    return new ResponseModel<UserInfoDTO>
+                    {
+                        Success = repoResponse.Success,
+                        Message = repoResponse.Message
+                    };
+            }
+            catch (Exception err)
+            {
+                _logger.Error(err, "UserService.GetByUserId");
+                throw;
+            }
+        }
+
+        public ResponseModel<UserDTO> GetUserByIdForModAndAdmin(Guid id)
         {
             try
             {
@@ -78,20 +104,21 @@ namespace PracaInzynierska.Application.Services.User
             }
         }
 
-        public ResponseModel<UserDTO> GetUserByEmail(string email)
+
+        public ResponseModel<UserInfoDTO> GetUserByEmail(string email)
         {
             try
             {
                 var repoResponse = _unitOfWork.GetUserRepository.GetByEmail(email);
                 if (repoResponse.Success)
-                    return new ResponseModel<UserDTO>
+                    return new ResponseModel<UserInfoDTO>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message,
-                        Object = _mapper.Map<UserDTO>(repoResponse.Object)
+                        Object = _mapper.Map<UserInfoDTO>(repoResponse.Object)
                     };
                 else
-                    return new ResponseModel<UserDTO>
+                    return new ResponseModel<UserInfoDTO>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message
@@ -104,20 +131,20 @@ namespace PracaInzynierska.Application.Services.User
             }
         }
 
-        public ResponseModel<UserDTO> GetUserByUserName(string userName)
+        public ResponseModel<UserInfoDTO> GetUserByUserName(string userName)
         {
             try
             {
                 var repoResponse = _unitOfWork.GetUserRepository.GetByUserName(userName);
                 if (repoResponse.Success)
-                    return new ResponseModel<UserDTO>
+                    return new ResponseModel<UserInfoDTO>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message,
-                        Object = _mapper.Map<UserDTO>(repoResponse.Object)
+                        Object = _mapper.Map<UserInfoDTO>(repoResponse.Object)
                     };
                 else
-                    return new ResponseModel<UserDTO>
+                    return new ResponseModel<UserInfoDTO>
                     {
                         Success = repoResponse.Success,
                         Message = repoResponse.Message

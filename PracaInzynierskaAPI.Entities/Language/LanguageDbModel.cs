@@ -15,7 +15,6 @@ namespace PracaInzynierskaAPI.Entities.Language
         public string Language { get; set; }
 
         //foreign key
-        public Guid BookId { get; set; }
         [JsonIgnore]
         public List<BookDbModel> Books { get; set; }
 

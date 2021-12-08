@@ -91,12 +91,6 @@ namespace PracaInzynierskaAPI.DataBase.Migrations
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Cover")
-                        .HasColumnType("text");
-
-                    b.Property<string>("CoverName")
-                        .HasColumnType("text");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp without time zone");
 
@@ -111,9 +105,6 @@ namespace PracaInzynierskaAPI.DataBase.Migrations
 
                     b.Property<long>("Dislikes")
                         .HasColumnType("bigint");
-
-                    b.Property<bool>("ForDelete")
-                        .HasColumnType("boolean");
 
                     b.Property<string>("ISBN")
                         .HasColumnType("text");
@@ -389,9 +380,6 @@ namespace PracaInzynierskaAPI.DataBase.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<Guid>("AddedBy")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("BookId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")

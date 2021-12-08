@@ -31,6 +31,7 @@ namespace PracaInzynierskaAPI.Entities.User
 #nullable disable
 
         //foreignKey
+        [JsonIgnore]
         public  List<UserPermissionDbModel> UserPermissions { get; set; }
 
         [JsonIgnore]

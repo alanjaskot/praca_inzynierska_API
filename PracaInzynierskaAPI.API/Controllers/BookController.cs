@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PracaInzynierska.Application.DTO.Book;
+using PracaInzynierska.Application.DTO.Book_Author;
 using PracaInzynierska.Application.Services.Book;
+using PracaInzynierska.Application.Services.Book_Author;
 using PracaInzynierskaAPI.API.PoliciesAndPermissions;
 using System;
 using System.Collections.Generic;
@@ -17,11 +19,14 @@ namespace PracaInzynierskaAPI.API.Controllers
     public class BookController : ControllerBase
     {
         private readonly IBookService _service;
+        private readonly IBook_AuthorService _baService;
         private static ILogger _logger;
 
-        public BookController(IBookService serivce)
+        public BookController(IBookService serivce,
+            IBook_AuthorService baService)
         {
             _service = serivce;
+            _baService = baService;
             _logger = LogManager.GetCurrentClassLogger();
         }
 
@@ -237,16 +242,29 @@ namespace PracaInzynierskaAPI.API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public async Task<IActionResult> CreateBook(BookDTO book)
+        public async Task<IActionResult> CreateBook(AddDeleteBook adBook)
         {
-            if (book == null)
+            if (adBook.Book == null || adBook.Book_Authors == null)
                 return await Task.FromResult(BadRequest());
+            
+            adBook.Book.Id = Guid.NewGuid();
+            foreach (var item in adBook.Book_Authors)
+            {
+                item.Id = Guid.NewGuid();
+                item.BookId = adBook.Book.Id;
+            }                
 
             try
             {
-                var serviceResponse = _service.AddBook(book);
+                var serviceResponse = _service.AddBook(adBook.Book);
                 if (serviceResponse.Success)
-                    return await Task.FromResult(Ok(serviceResponse));
+                {
+                    var baServiceRespone = _baService.AddBook_Authors(adBook.Book_Authors);
+                    if (baServiceRespone.Success)
+                        return await Task.FromResult(Created("Książka została dodana", adBook.Book.Id));
+                    else
+                        return await Task.FromResult(BadRequest(serviceResponse));
+                }
                 else
                     return await Task.FromResult(BadRequest(serviceResponse));
             }
@@ -319,6 +337,12 @@ namespace PracaInzynierskaAPI.API.Controllers
 
             try
             {
+                foreach (var book in books)
+                {
+                    var baServiceResponse = _baService.DeleteBook_Author(book.Id);
+                    if (!baServiceResponse.Success)
+                        return await Task.FromResult(BadRequest("Wystąpił błąd w trakcie usuwania"));
+                }
                 var serviceResponse = _service.SoftDeleteBooks(books);
                 if (serviceResponse.Success)
                     return await Task.FromResult(Ok(serviceResponse));
@@ -344,6 +368,10 @@ namespace PracaInzynierskaAPI.API.Controllers
 
             try
             {
+                var baServiceResponse = _baService.DeleteBook_Author(bookId);
+                if (!baServiceResponse.Success)
+                    return await Task.FromResult(BadRequest("Wystąpił błąd w trakcie usuwania"));
+
                 var serviceResponse = _service.DeleteBook(bookId);
                 if (serviceResponse.Success)
                     return await Task.FromResult(Ok(serviceResponse));
@@ -357,6 +385,10 @@ namespace PracaInzynierskaAPI.API.Controllers
             }
         }
 
-
+        public class AddDeleteBook
+        {
+            public BookDTO Book { get; set; }
+            public List<Book_AuthorDTO> Book_Authors { get; set; }
+        }
     }
 }
