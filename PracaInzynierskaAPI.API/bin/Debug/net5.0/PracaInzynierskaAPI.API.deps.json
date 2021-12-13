@@ -1534,7 +1534,6 @@
           "NLog": "4.7.12",
           "NLog.Extensions.Logging": "1.7.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
-          "PracaInzynierskaAPI.EncryptorDecryptor": "1.0.0",
           "PracaInzynierskaAPI.Entities": "1.0.0",
           "PracaInzynierskaAPI.Models": "1.0.0"
         },
@@ -1543,14 +1542,6 @@
         },
         "compile": {
           "PracaInzynierskaAPI.DataBase.dll": {}
-        }
-      },
-      "PracaInzynierskaAPI.EncryptorDecryptor/1.0.0": {
-        "runtime": {
-          "PracaInzynierskaAPI.EncryptorDecryptor.dll": {}
-        },
-        "compile": {
-          "PracaInzynierskaAPI.EncryptorDecryptor.dll": {}
         }
       },
       "PracaInzynierskaAPI.Entities/1.0.0": {
@@ -4137,11 +4128,6 @@
       "sha512": ""
     },
     "PracaInzynierskaAPI.DataBase/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "PracaInzynierskaAPI.EncryptorDecryptor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

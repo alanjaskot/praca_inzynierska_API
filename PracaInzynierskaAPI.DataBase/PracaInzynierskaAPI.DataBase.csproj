@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PracaInzynierskaAPI.EncryptorDecryptor\PracaInzynierskaAPI.EncryptorDecryptor.csproj" />
     <ProjectReference Include="..\PracaInzynierskaAPI.Entities\PracaInzynierskaAPI.Entities.csproj" />
     <ProjectReference Include="..\PracaInzynierskaAPI.Models\PracaInzynierskaAPI.Models.csproj" />
   </ItemGroup>

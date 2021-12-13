@@ -10,3 +10,15 @@ D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaI
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.dll
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\ref\PracaInzynierskaAPI.Core.Base.dll
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.pdb
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Base.deps.json
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Base.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\bin\Debug\net5.0\ref\PracaInzynierskaAPI.Core.Base.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\bin\Debug\net5.0\PracaInzynierskaAPI.Core.Base.pdb
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.csproj.AssemblyReference.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.GeneratedMSBuildEditorConfig.editorconfig
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.AssemblyInfoInputs.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.AssemblyInfo.cs
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.csproj.CoreCompileInputs.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\ref\PracaInzynierskaAPI.Core.Base.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Core.Base\obj\Debug\net5.0\PracaInzynierskaAPI.Core.Base.pdb

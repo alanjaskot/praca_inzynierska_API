@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HSb80bxPd7SWHdGF3VVy627PCxmFaD3F6yUDgZHPdM2H/cEXIyWlBgb97eRnDEiF/tUMjORYd+ZlUnxJGnPgmg==",
+  "dgSpecHash": "Nc3B2fURESQzLOdcr/KcLi6f+Qnke5umk2+MUYyMhKafLXbLE2qvnE+XT0FBeQqmHvYvOZJ6zHeTGvU4hjYyMA==",
   "success": true,
-  "projectFilePath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj",
+  "projectFilePath": "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierskaAPI.Models\\PracaInzynierskaAPI.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

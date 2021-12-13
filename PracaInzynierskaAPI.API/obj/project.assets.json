@@ -1810,7 +1810,6 @@
           "NLog": "4.7.12",
           "NLog.Extensions.Logging": "1.7.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
-          "PracaInzynierskaAPI.EncryptorDecryptor": "1.0.0",
           "PracaInzynierskaAPI.Entities": "1.0.0",
           "PracaInzynierskaAPI.Models": "1.0.0"
         },
@@ -1819,16 +1818,6 @@
         },
         "runtime": {
           "bin/placeholder/PracaInzynierskaAPI.DataBase.dll": {}
-        }
-      },
-      "PracaInzynierskaAPI.EncryptorDecryptor/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/PracaInzynierskaAPI.EncryptorDecryptor.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PracaInzynierskaAPI.EncryptorDecryptor.dll": {}
         }
       },
       "PracaInzynierskaAPI.Entities/1.0.0": {
@@ -6259,11 +6248,6 @@
       "path": "../PracaInzynierskaAPI.DataBase/PracaInzynierskaAPI.DataBase.csproj",
       "msbuildProject": "../PracaInzynierskaAPI.DataBase/PracaInzynierskaAPI.DataBase.csproj"
     },
-    "PracaInzynierskaAPI.EncryptorDecryptor/1.0.0": {
-      "type": "project",
-      "path": "../PracaInzynierskaAPI.EncryptorDecryptor/PracaInzynierskaAPI.EncryptorDecryptor.csproj",
-      "msbuildProject": "../PracaInzynierskaAPI.EncryptorDecryptor/PracaInzynierskaAPI.EncryptorDecryptor.csproj"
-    },
     "PracaInzynierskaAPI.Entities/1.0.0": {
       "type": "project",
       "path": "../PracaInzynierskaAPI.Entities/PracaInzynierskaAPI.Entities.csproj",
@@ -6292,41 +6276,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alanj\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\eatus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
+      "projectUniqueName": "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
       "projectName": "PracaInzynierskaAPI.API",
-      "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
-      "packagesPath": "C:\\Users\\alanj\\.nuget\\packages\\",
-      "outputPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierskaAPI.API\\obj\\",
+      "projectPath": "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierskaAPI.API\\PracaInzynierskaAPI.API.csproj",
+      "packagesPath": "C:\\Users\\eatus\\.nuget\\packages\\",
+      "outputPath": "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierskaAPI.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\eatus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\alanj\\source\\repos\\ZaawansowaneTechnikiProgramowania\\ProjektZaliczeniowy\\Application\\bin\\Debug\\net5.0": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.robosoft.net.pl/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj": {
-              "projectPath": "D:\\inz\\PracaInzynierskaAPI\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj"
+            "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj": {
+              "projectPath": "D:\\inz\\PracaInzynierskaAPI\\praca_inzynierska_API\\PracaInzynierska.Application\\PracaInzynierska.Application.csproj"
             }
           }
         }

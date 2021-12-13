@@ -10,3 +10,15 @@ D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzy
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.dll
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Models\obj\Debug\net5.0\ref\PracaInzynierskaAPI.Models.dll
 D:\inz\PracaInzynierskaAPI\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.pdb
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\bin\Debug\net5.0\PracaInzynierskaAPI.Models.deps.json
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\bin\Debug\net5.0\PracaInzynierskaAPI.Models.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\bin\Debug\net5.0\ref\PracaInzynierskaAPI.Models.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\bin\Debug\net5.0\PracaInzynierskaAPI.Models.pdb
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.csproj.AssemblyReference.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.AssemblyInfoInputs.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.AssemblyInfo.cs
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.csproj.CoreCompileInputs.cache
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\ref\PracaInzynierskaAPI.Models.dll
+D:\inz\PracaInzynierskaAPI\praca_inzynierska_API\PracaInzynierskaAPI.Models\obj\Debug\net5.0\PracaInzynierskaAPI.Models.pdb

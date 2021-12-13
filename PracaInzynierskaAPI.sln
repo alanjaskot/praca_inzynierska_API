@@ -11,13 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierskaAPI.Entitie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierskaAPI.DataBase", "PracaInzynierskaAPI.DataBase\PracaInzynierskaAPI.DataBase.csproj", "{15E41783-B4F0-43A0-9B0E-2ADE6435E4F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierskaAPI.EncryptorDecryptor", "PracaInzynierskaAPI.EncryptorDecryptor\PracaInzynierskaAPI.EncryptorDecryptor.csproj", "{2C1FD1CD-6A09-4CA2-9B33-92452E86BAE3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierska.Application", "PracaInzynierska.Application\PracaInzynierska.Application.csproj", "{278C82E1-40B1-45C7-A178-9137D8EA03A7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierskaAPI.API", "PracaInzynierskaAPI.API\PracaInzynierskaAPI.API.csproj", "{4E64FA22-0D7E-4AD4-B44B-7A63301E9650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracaInzynierskaAPI.Models", "PracaInzynierskaAPI.Models\PracaInzynierskaAPI.Models.csproj", "{CC54E1B1-7041-40BD-9AE4-6C159B1B7029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracaInzynierskaAPI.Models", "PracaInzynierskaAPI.Models\PracaInzynierskaAPI.Models.csproj", "{CC54E1B1-7041-40BD-9AE4-6C159B1B7029}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{15E41783-B4F0-43A0-9B0E-2ADE6435E4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E41783-B4F0-43A0-9B0E-2ADE6435E4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E41783-B4F0-43A0-9B0E-2ADE6435E4F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C1FD1CD-6A09-4CA2-9B33-92452E86BAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C1FD1CD-6A09-4CA2-9B33-92452E86BAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C1FD1CD-6A09-4CA2-9B33-92452E86BAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C1FD1CD-6A09-4CA2-9B33-92452E86BAE3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{278C82E1-40B1-45C7-A178-9137D8EA03A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{278C82E1-40B1-45C7-A178-9137D8EA03A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{278C82E1-40B1-45C7-A178-9137D8EA03A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
